@@ -1,16 +1,18 @@
 {
   "name": "restaurant_page",
   "version": "1.0.0",
-  "description": "The odin restaurant page",
-  "main": "index.js",
+  "description": "TOP Restaurant Page Project",
+  "main": "main.js",
   "scripts": {
-    "test": "true"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Tebibux/Restaurant_Page.git"
+    "url": "git+ssh://github.com/Tebibux/Restaurant_Page.git"
   },
-  "author": "Tebibux",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Tebibux/Restaurant_Page/issues"
