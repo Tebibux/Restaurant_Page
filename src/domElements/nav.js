@@ -1,4 +1,4 @@
-export default elements = () => {
+export default navigation = () => {
 	// navigation tab
 	const nav = document.createElement('div');
 	nav.className = 'contact';
@@ -15,4 +15,9 @@ export default elements = () => {
 	const contact = document.createElement('a');
 	contact.href = './Contact.html'
 	contact.innerText = 'Contact';
+
+	// appending links
+	nav.appendChild(menu);
+	nav.appendChild(about);
+	nav.appendChild(contact);
 }
