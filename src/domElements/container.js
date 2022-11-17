@@ -2,7 +2,10 @@
 // naming the container 'container' many cause 
 // naming conflict
 // cont == container
-export default cont = () => {
+function cont(){
 	const contnr = document.createElement('div');
-	contnr.className = 'container'
+	contnr.className = 'container';
+	contnr.innerText = 'hi'
+	return contnr
 }
+export {cont};
