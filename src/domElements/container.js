@@ -1,11 +1,15 @@
-// as node has it own container name
-// naming the container 'container' many cause 
-// naming conflict
-// cont == container
-function cont(){
-	const contnr = document.createElement('div');
-	contnr.className = 'container';
-	contnr.innerText = 'hi'
-	return contnr
+export default class Link {
+	constructor(type, className, inText) {
+		this.type = type;
+		this.className = className;
+		this.inText = inText;
+	}
+	elementDom = () => {
+		const elm = document.createElement(`${this.type}`);
+		elm.className = `${this.className}`;
+		elm.reference = `${this.reference}`;
+		elm.innerText = `${this.inText}`;
+		return elm
+	}
+
 }
-export {cont};
