@@ -30,14 +30,14 @@ contact.appendChild(menu);
 // links -- body of the index page
 // link -- the second(about) page
 const aboutDom = new Link('a', 'link', 'About');
-const about = menuDom.elementDom();
+const about = aboutDom.elementDom();
 about.href = "./About.html";
 contact.appendChild(about);
 
 // links -- body of the index page
-// link -- the second(about) page
+// link -- the third(contact) page
 const contactsDom = new Link('a', 'link', 'Contact');
-const contacts = menuDom.elementDom();
+const contacts = contactsDom.elementDom();
 contacts.href = "./Contact.html";
 contact.appendChild(contacts);
 // adding the body to the container

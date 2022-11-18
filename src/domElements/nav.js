@@ -20,4 +20,5 @@ export default navigation = () => {
 	nav.appendChild(menu);
 	nav.appendChild(about);
 	nav.appendChild(contact);
+	return nav;
 }
