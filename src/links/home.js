@@ -1,20 +1,19 @@
 // import './styles/style.css'
 import { header, headerTwo } from '../domElements/headerOne';
-import Link from '../domElements/container';
-import footer from '../domElements/foot';
-import  navigation from '../domElements/nav';
+import Link from '../domElements/container'
+import footer from '../domElements/foot'
 
 // loading the container
 const container = document.querySelector('.container');
 // appending the header
-const contact = () => {
-	const head2 = headerTwo();
+const home = () => {
+	const head1 = header();
 	// adding header to the container
-	container.appendChild(head2);
+	container.appendChild(head1);
 	// _____________-- navigation edit -- _________________
 	// as no navigation bar in the index page null div as place holder
 	// 		to maintain the css position
-	const nav = navigation();
+	const nav = document.createElement('div');
 	// adding the navigation to the container
 	container.appendChild(nav);
 	// _____________-- body content edit --_________________
@@ -22,23 +21,26 @@ const contact = () => {
 	const contactDom = new Link('div', 'contact', '')
 	const contact = contactDom.elementDom();
 
-	// contact owner name -- body of the index page
+	// links -- body of the index page
 	// link -- the first(menu) page
-	const ownerName = new Link('div', 'owner_name', 'Bini Fast Foods');
-	const name = ownerName.elementDom();
-	contact.appendChild(name);
+	const menuDom = new Link('a', 'link', 'Menu');
+	const menu = menuDom.elementDom();
+	menu.href = "./Menu.html";
+	contact.appendChild(menu);
 
-	// contact owner phone number
-	// shows the owner phone number
-	const ownerPhone = new Link('div', 'owner_phone', '+2519-123-456-789');
-	const phone = ownerPhone.elementDom();
-	contact.appendChild(phone);
+	// links -- body of the index page
+	// link -- the second(about) page
+	const aboutDom = new Link('a', 'link', 'About');
+	const about = aboutDom.elementDom();
+	about.href = "./About.html";
+	contact.appendChild(about);
 
 	// links -- body of the index page
 	// link -- the third(contact) page
-	const ownerEmail = new Link('div', 'owner_email', 'Binifastfoods123@gmail.com');
-	const email = ownerEmail.elementDom();
-	contact.appendChild(email);
+	const contactsDom = new Link('a', 'link', 'Contact');
+	const contacts = contactsDom.elementDom();
+	contacts.href = "./Contact.html";
+	contact.appendChild(contacts);
 	// adding the body to the container
 	container.appendChild(contact);
 
@@ -52,4 +54,4 @@ const contact = () => {
 	return container;
 }
 
-export default contact;
+export default home;

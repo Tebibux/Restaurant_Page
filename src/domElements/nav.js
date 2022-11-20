@@ -1,20 +1,24 @@
-export default navigation = () => {
+ import Link from "./container";
+ const navigation = () => {
 	// navigation tab
-	const nav = document.createElement('div');
-	nav.className = 'contact';
+	// const nav = new Link('div', '', '');
+	const nav = document.createElement('nav');
 	// links
 	// home link
 	const menu = document.createElement('a');
+	menu.className = 'list';
 	menu.href = './Menu.html'
-	menu.innerText = 'Menu';
+	menu.innerHTML = '<div>Menu</div>';
 
 	const about = document.createElement('a');
+	about.className = 'list';
 	about.href = './About.html'
-	about.innerText = 'About';
+	about.innerHTML = '<div>About</div>';
 
 	const contact = document.createElement('a');
+	contact.className = 'list';
 	contact.href = './Contact.html'
-	contact.innerText = 'Contact';
+	contact.innerHTML = '<div>Contact</div>';
 
 	// appending links
 	nav.appendChild(menu);
@@ -22,3 +26,5 @@ export default navigation = () => {
 	nav.appendChild(contact);
 	return nav;
 }
+
+export default navigation;

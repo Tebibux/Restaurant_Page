@@ -1,5 +1,5 @@
 export default class Link {
-	constructor(type, className, inText) {
+	constructor(type, className = undefined, inText=undefined) {
 		this.type = type;
 		this.className = className;
 		this.inText = inText;
@@ -7,7 +7,6 @@ export default class Link {
 	elementDom = () => {
 		const elm = document.createElement(`${this.type}`);
 		elm.className = `${this.className}`;
-		elm.reference = `${this.reference}`;
 		elm.innerText = `${this.inText}`;
 		return elm
 	}
