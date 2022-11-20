@@ -2,7 +2,7 @@
 const header = () => {
 	const head = document.createElement('div');
 	head.className = 'header';
-	head.innerText = 'Ethiopian Recipe';
+	head.innerText = 'Ethiopian about';
 	return head;
 }
 
