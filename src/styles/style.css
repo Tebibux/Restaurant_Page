@@ -12,6 +12,7 @@ body {
 	color: #333;
 	background: #f5f5f5;
 	background: url('../asset/image/backgroun.png') fixed;
+	background-repeat: repeat-x;
 	background-size: contain;
 }
 
