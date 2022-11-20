@@ -8,8 +8,11 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
+	height: 100vh;
 	color: #333;
 	background: #f5f5f5;
+	background: url('../asset/image/backgroun.png') no-repeat fixed;
+	background-size: contain;
 }
 
 .container {
@@ -18,13 +21,16 @@ body {
 	justify-items: center;
 	grid-template-rows: 75px 60px 1fr 50px;
 	gap: 10px;
+
 }
 
 nav,
 .footer,
 .header {
 	width: 100%;
-	box-shadow: 0px 5px 16px -2px rgba(0, 0, 0, 0.25);
+	background-color: rgba(51, 51, 51, 0.808);
+	color: white;
+	box-shadow: 0px 5px 16px -2px rgba(0, 0, 0, 0.805);
 	font-size: 1.5rem;
 	display: flex;
 	justify-content: center;
@@ -56,7 +62,7 @@ a {
 
 .list:hover {
 	box-shadow: 0px 5px 16px -2px rgba(0, 0, 0, 0.25);
-	background-color: #63636396;
+	background-color: #ffffff96;
 }
 
 .main,
@@ -73,10 +79,12 @@ a {
 
 .food-content {
 	display: grid;
-	height: 200px;
+	height: 110px;
 	grid-template-columns: 1fr 2fr;
 	gap: 20px;
-	box-shadow: 5px 8px 6px -7px rgba(0, 0, 0, 0.47);
+	color: white;
+	background-color: rgba(175, 175, 175, 0.563);
+	box-shadow: 5px 8px 6px -7px rgba(255, 255, 255, 0.75);
 }
 
 .about-content {
@@ -87,13 +95,15 @@ a {
 	align-items: center;
 }
 
+.food-image,
 .about-image {
 	padding: 5px;
-	height: 60%;
+	width: 100%;
 	aspect-ratio: 16/9;
 	background-color: #333;
 }
-.contact > div{
+
+.contact>div {
 	background-color: rgba(230, 230, 230, 0.808);
 	height: 33.33%;
 	width: 100%;
@@ -104,31 +114,28 @@ a {
 	box-shadow: 10px 5px 10px -9px rgba(0, 0, 0, 0.47);
 
 }
-.link{
-	background-color: rgba(137, 238, 221, 0.808);
+
+.link {
+	background-color: rgba(94, 114, 111, 0.808);
 	height: 25%;
+	border-radius: 20px;
 	width: 100%;
 	display: flex;
 	font-size: 2rem;
 	align-items: center;
 	justify-content: center;
 }
-.link:hover{
-	background-color: rgba(58, 58, 58, 0.527);
-	color: rgb(204, 203, 203);
-	box-shadow: 5px 8px 6px -7px rgba(0, 0, 0, 0.47);
-}
-.contact > div:hover{
-	background-color: rgba(58, 58, 58, 0.527);
-	color: rgb(204, 203, 203);
-	box-shadow: 5px 8px 6px -7px rgba(0, 0, 0, 0.47);
 
+.link:hover {
+	background-color: rgba(58, 58, 58, 0.527);
+	color: rgb(255, 255, 255);
+	box-shadow: 5px 0px 6px 3px rgba(180, 180, 180, 0.33);
 }
 
-.food-image {
-	padding: 3px;
-	height: 100%;
-	background-color: #333;
+.contact>div:hover {
+	background-color: rgba(58, 58, 58, 0.527);
+	color: rgb(255, 255, 255);
+	box-shadow: 5px 8px 6px -7px rgba(0, 0, 0, 0.47);
 
 }
 
@@ -153,6 +160,7 @@ a {
 
 .about-description-body .description-body {
 	font-size: 1rem;
+	color: white;
 }
 
 .footer {
