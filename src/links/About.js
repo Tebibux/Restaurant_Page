@@ -4,6 +4,7 @@ import Link from '../domElements/container';
 import footer from '../domElements/foot';
 import  navigation from '../domElements/nav';
 import AboutContent from '../domElements/aboutContent';
+import aboutImage from '../asset/image/About_Image.png';
 
 
 // loading the container
@@ -29,7 +30,9 @@ const about = () => {
 	const main = mainAbout.elementDom();
 
 	// creating the about site
-	const aboutSite = new AboutContent('', 'Special Ful', `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
+	const aboutImg = new Image();
+	aboutImg.src = aboutImage;
+	const aboutSite = new AboutContent(`${aboutImg.src}`, 'Biniam Fast Food', `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
 	dolorem commodi nostrum optio quam neque libero. Dolorum vel unde magnam earum exercitationem
 	voluptatibus, dignissimos, voluptatem iusto in expedita, velit blanditiis.`);
 

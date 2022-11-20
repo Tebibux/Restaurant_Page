@@ -6,7 +6,7 @@ import Link from "./container";
 //	title
 // 	description --> returns DOM that contains img, title, and description.
 class AboutContent {
-	constructor(imgSource = undefined, title, description) {
+	constructor(imgSource, title, description) {
 		this.imgSource = imgSource;
 		this.title = title;
 		this.description = description;

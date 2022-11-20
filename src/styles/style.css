@@ -146,6 +146,7 @@ a {
 
 .about-description-title,
 .description-title {
+	width: 100%;
 	font-weight: bold;
 	font-size: 2rem;
 }
