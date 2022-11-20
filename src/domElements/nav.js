@@ -7,17 +7,17 @@
 	// home link
 	const menu = document.createElement('a');
 	menu.className = 'list';
-	menu.href = './Menu.html'
+	menu.id = 'menu'
 	menu.innerHTML = '<div>Menu</div>';
 
 	const about = document.createElement('a');
 	about.className = 'list';
-	about.href = './About.html'
+	about.id = 'about'
 	about.innerHTML = '<div>About</div>';
 
 	const contact = document.createElement('a');
 	contact.className = 'list';
-	contact.href = './Contact.html'
+	contact.id = 'contact'
 	contact.innerHTML = '<div>Contact</div>';
 
 	// appending links

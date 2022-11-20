@@ -1,16 +1,30 @@
-import './styles/style.css'
-// import { header, headerTwo } from './domElements/headerOne';
-// import Link from './domElements/container'
-// import footer from './domElements/foot'
-
-// import home from './links/home';
-// home();
-
-// import Menu from './links/Menu';
-// Menu();
-
+import './styles/style.css';
+import home from './links/home';
+import Menu from './links/Menu';
 import about from './links/About';
-about();
+import contact from './links/contact';
 
-// import contact from './links/contact';
-// contact();
+const container = document.querySelector('.container')
+
+window.addEventListener("load", () => {
+	home();
+})
+
+container.addEventListener("click", (e) => {
+	if ((e.target.id === 'menuId') || (e.target.id === 'menu')) {
+		container.innerHTML = '';
+		Menu();
+	}
+	else if (e.target.id === 'aboutId'|| (e.target.id === 'about')) {
+		container.innerHTML = '';
+		about(); // aboutId
+	}
+	else if (e.target.id === 'contactsId'|| (e.target.id === 'contact')) {
+		container.innerHTML = '';
+		contact(); // contactsId
+	}
+	else if (e.target.className === 'header') {
+		container.innerHTML = '';
+		home();
+	}
+})

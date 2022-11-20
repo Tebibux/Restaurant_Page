@@ -25,21 +25,21 @@ const home = () => {
 	// link -- the first(menu) page
 	const menuDom = new Link('a', 'link', 'Menu');
 	const menu = menuDom.elementDom();
-	menu.href = "./Menu.html";
+	menu.id = 'menuId';
 	contact.appendChild(menu);
 
 	// links -- body of the index page
 	// link -- the second(about) page
 	const aboutDom = new Link('a', 'link', 'About');
 	const about = aboutDom.elementDom();
-	about.href = "./About.html";
+	about.id = 'aboutId'
 	contact.appendChild(about);
 
 	// links -- body of the index page
 	// link -- the third(contact) page
 	const contactsDom = new Link('a', 'link', 'Contact');
 	const contacts = contactsDom.elementDom();
-	contacts.href = "./Contact.html";
+	contacts.id = 'contactsId'
 	contact.appendChild(contacts);
 	// adding the body to the container
 	container.appendChild(contact);
